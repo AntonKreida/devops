@@ -14,9 +14,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: install modiles
-        run: yarn install | echo "🎉 project install success!"
+        run: yarn install
       - name: build project
-        run: yarn build | echo "🎉 project build success!"
+        run: yarn build
       - name: linter
-        run: yarn lint | echo "🎉 project lint success!"
+        run: yarn lint
  

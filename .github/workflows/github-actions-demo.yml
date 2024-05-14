@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: ${{ github.actor }} this my first devops 🚀
 on: [push]
 jobs:
   init:
@@ -13,6 +13,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn install
-      - run: echo "🎉 project install success!"
+      - name: install modiles
+        run: yarn install | echo "🎉 project install success!"
  

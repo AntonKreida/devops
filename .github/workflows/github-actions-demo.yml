@@ -1,6 +1,10 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} this my first devops 🚀
-on: [push]
+on: 
+    push:
+      branches: [main]
+    pull_request: 
+      branches: [main]  
 jobs:
   init:
     runs-on: ubuntu-latest
